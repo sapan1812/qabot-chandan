@@ -39,7 +39,7 @@ class ActionReady(Action):
 
     def get_question(self):
         #questions = set()
-        with open(os.path.join(os.path.dirname(__file__),"python_demo.csv"), "r", encoding="utf-8")as f:
+        with open(r"C:\etc\QABot\project-up1\qabot-chandan\actions\python_demo.csv", "r", encoding="utf-8") as f:
             reader = csv.reader(f)
             for row in reader:
                 csv_data.append(row)

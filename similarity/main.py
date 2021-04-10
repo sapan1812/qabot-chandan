@@ -27,7 +27,7 @@ def run1(rand_id_list,anslist,user_input):
     glv_marks = 0
 
     ##have to use relative path here
-    python_merged_df = pd.read_csv(os.path.join(os.path.dirname(__file__),"Python_Cleaned_Questions.csv"))
+    python_merged_df = pd.read_csv(r"C:\etc\QABot\project-up1\qabot-chandan\actions\Python_Cleaned_Questions.csv")
     for question_random_id in rand_id_list:
         answers_randID = python_merged_df[python_merged_df.Id == int(question_random_id)][['A_Score', 'P_A_Body_wo_freq']]
         answersList = answers_randID['P_A_Body_wo_freq'].tolist()

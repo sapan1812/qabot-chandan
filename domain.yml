@@ -42,5 +42,6 @@ actions:
 - action_ask_question
 - get_answer
 - get_similarity
+
 forms: {}
 e2e_actions: []
