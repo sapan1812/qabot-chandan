@@ -31,7 +31,7 @@ docker network create qabot-connect
 
 7) run action server first with default port 5055 & newly created connections 
 # run actions
-docker run -d -v %cd%:/app/actions #net qabot_connect #name qabot-action sapan1812/qabotactions:1.1
+docker run -d -v %cd%:/app/actions --net qabot_connect --name qabot-action sapan1812/qabotactions:1.1
 
 8) Run rasa shell with 5005 port with user ( replace %cd% with $(pwd) in case of linux system)
 docker run #user 1001 -it -v %cd%:/app -p 5005:5005 #net qabot_connect  sapan1812/qabot shell
