@@ -1,4 +1,3 @@
-,Id,Tag,Q_Score,Title,Q_Body,A_Body,A_Score
 267,152580,python,588,What's the canonical way to check for type in python?,"<p>What is the best way to check whether a given object is of a given type? How about checking whether the object inherits from a given type?</p>
 
 <p>Let's say I have an object <code>o</code>. How do I check whether it's a <code>str</code>?</p>

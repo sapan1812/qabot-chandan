@@ -18,7 +18,7 @@ services:
       - --model
       - /app/models
       - --endpoints
-      - /app/config/endpoints.yml
+      - /app/config/endpoints.local.yml
     networks: [ 'rasa-network' ]
   qabot-action:
     env_file:

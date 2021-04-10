@@ -23,7 +23,7 @@ RUN python -m spacy download en_core_web_sm
 
 COPY . .
 
-VOLUME ["/app/actions"]
+VOLUME ["/app/actions","/app/similarity"]
 
 EXPOSE 5055
 
