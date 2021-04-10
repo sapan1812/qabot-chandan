@@ -19,12 +19,12 @@
 
 1) Download project via github :https://github.com/sapan1812/qabot-final.git
 2) Go to project directory & open command prompt/terminal
-3) docker build . #no-cache -t sapan1812/qabot
+3) docker build . --no-cache -t sapan1812/qabot
 4) go to project directory -> actions folder -> execute below command
-   docker build . #no-cache -t sapan1812/qabotactions:1.1
+   docker build . --no-cache -t sapan1812/qabotactions:1.1
    
 5) Once step 3 & 4 is completed then execute training command
-docker run #user 1001 -v %cd%:/app sapan1812/qabot train
+docker run #--user 1001 -v %cd%:/app sapan1812/qabot train
 
 6) Create connection to be used 
 docker network create qabot-connect
