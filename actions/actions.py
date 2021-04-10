@@ -44,7 +44,7 @@ class ActionReady(Action):
             for row in reader:
                 csv_data.append(row)
                 Q_dict[row[1]] = row[4]
-        RAND_ID_LIST.extend(random.sample(list(Q_dict.keys()), 1))
+        RAND_ID_LIST.extend(random.sample(list(Q_dict.keys()), 5))
         for i in RAND_ID_LIST:
             QUESTIONS_FINAL.append(Q_dict[i])
 

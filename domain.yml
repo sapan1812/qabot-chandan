@@ -13,7 +13,8 @@ intents:
     use_entities: true
 - answer:
     use_entities: true
-entities: []
+entities:
+- parameters
 slots: {}
 responses:
   utter_welcome:

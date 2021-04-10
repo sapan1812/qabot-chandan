@@ -24,16 +24,19 @@
    docker build . #no-cache -t sapan1812/qabotactions:1.1
    
 5) Once step 3 & 4 is completed then execute training command
+# docker train
 docker run #user 1001 -v %cd%:/app sapan1812/qabot train
 
 6) Create connection to be used 
+#create connection
 docker network create qabot-connect
 
 7) run action server first with default port 5055 & newly created connections 
 # run actions
-docker run -d -v %cd%:/app/actions --net qabot_connect --name qabot-action sapan1812/qabotactions:1.1
+docker run -d -v %cd%:/app/actions qabot_connect name qabot-action sapan1812/qabotactions:1.1
 
 8) Run rasa shell with 5005 port with user ( replace %cd% with $(pwd) in case of linux system)
+#Run Shell
 docker run #user 1001 -it -v %cd%:/app -p 5005:5005 #net qabot_connect  sapan1812/qabot shell
 
 

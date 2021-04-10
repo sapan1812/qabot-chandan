@@ -14,22 +14,30 @@ stories:
     - action: get_answer
     - action: utter_subject1
     - action: get_similarity
-#    - action: action_ask_question
-#    - intent: answer
-#    - action: get_answer
-#    - action: utter_subject2
-#    - action: action_ask_question
-#    - intent: answer
-#    - action: get_answer
-#    - action: utter_subject3
-#    - action: action_ask_question
-#    - intent: answer
-#    - action: get_answer
-#    - action: utter_subject4
-#    - action: action_ask_question
-#    - intent: answer
-#    - action: get_answer
-#    - action: utter_subject5
+    - action: action_ready
+    - action: action_ask_question
+    - intent: answer
+    - action: get_answer
+    - action: utter_subject2
+    - action: get_similarity
+    - action: action_ready
+    - action: action_ask_question
+    - intent: answer
+    - action: get_answer
+    - action: utter_subject3
+    - action: get_similarity
+    - action: action_ready
+    - action: action_ask_question
+    - intent: answer
+    - action: get_answer
+    - action: utter_subject4
+    - action: get_similarity
+    - action: action_ready
+    - action: action_ask_question
+    - intent: answer
+    - action: get_answer
+    - action: utter_subject5
+    - action: get_similarity
 
 
 
